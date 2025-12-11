@@ -29,11 +29,11 @@ Los objetivos de la actividad han sido:
 Lo primero es puntualizar que esta actividad la he relizado en la máquina Kali Linux de la asignatura, la cual tiene instalados ya Visual Studio code y tiene creadas PKI para poder conectarme a GitHub.
 Una vez aclarado esto lo primero que hago siempre antes de comenzar a realizar cualquier actividad es ejecutar en la terminal el comando `sudo apt update` para actualizar la lista de paquetes disponibles de los repositorios por si acaso hay nuevas versiones de programas. 
 ![apt udpate](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img1.png)
+
 A continuación voy a ir a mi cuenta de GitHub y voy a crear un repositorio tal y como indica el profesor, ya que habrá que entregar el mismo como muestra de realización de la actividad. 
 para crearlo lo que hay que hacer es 
 1. Flecha 1: Darle al símbolo + del menú superior de GitHub
 1. Flecha 2: le ponemos el nombre que nos pide la tarea "PPSUnidad1-ActividadSandboking-TuNombre" en mi caso sería PPSUnidad1-ActividadSandboking-naiara
 1. Flecha 3: añado un archivo readme
-1. Flecha 4: Clic encima de crear repositorio (botón verde al final de la página)
-2. 
+1. Flecha 4: Clic encima de crear repositorio (botón verde al final de la página) 
 ![Pasos para crear un repositorio](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img2.png)
