@@ -1,4 +1,7 @@
 # Reflexión sobre las medidas de seguridad de los principales lenguajes de programación
+A continuación voy ha hacer una *opinión personal* a cerca de las **medidas de seguridad** que incorporan los diferentes *lenguajes de programación* habiendo leído el powerpoint proporcionado por el profesor y ampliando la información con búsquedas en internet.
+
+---
 
 > **“El lenguaje de programación que elijas influirá tanto en la seguridad de tu software como la cerradura que pones en tu puerta.”**  
 > — Bruce Schneier (experto en criptografía y ciberseguridad)
