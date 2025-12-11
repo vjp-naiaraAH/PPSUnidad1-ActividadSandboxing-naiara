@@ -24,3 +24,8 @@ En esta actividad voy a documentar como he podido realizar la prueba de la aplic
 Los objetivos de la actividad han sido:
 - Conocer como se puede ejecutar programas, malware, etc en entornos controlados y aislados para su análisis
 - Ser capaz de hacer Sandboxing de un programa
+
+### Desarrollo de la actividad
+Lo primero es puntualizar que esta actividad la he relizado en la máquina Kali Linux de la asignatura, la cual tiene instalados ya Visual Studio code y tiene creadas PKI para poder conectarme a GitHub.
+Una vez aclarado esto lo primero que hago siempre antes de comenzar a realizar cualquier actividad es ejecutar en la terminal el comando `sudo apt update` para actualizar la lista de paquetes disponibles de los repositorios por si acaso hay nuevas versiones de progrmas. 
+![apt udpate](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-ActividadSandboxing-naiara/refs/heads/main/docs/images/img1.png)
