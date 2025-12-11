@@ -32,6 +32,6 @@ Los **lenguajes de alto nivel** incorporan por diseño mecanismos que eliminan f
 ---
 
 ### Conclusión final
-En conclusión, aunque ningún lenguaje garantiza por sí solo la seguridad absoluta —las buenas prácticas, revisiones de código y actualizaciones siguen siendo imprescindibles, los lenguajes modernos ofrecen **niveles de protección estructural muy superiores** a los disponibles hace dos décadas.
+En conclusión, aunque ningún lenguaje garantiza por sí solo la seguridad absoluta *las buenas prácticas, revisiones de código y actualizaciones siguen siendo imprescindibles*, los lenguajes modernos ofrecen **niveles de protección estructural muy superiores** a los disponibles hace dos décadas.
 
 Por ello, la selección del lenguaje debe considerarse una **decisión estratégica de seguridad** desde la fase inicial del proyecto, ya que condiciona directamente qué vulnerabilidades quedarán prácticamente eliminadas por diseño y cuáles requerirán controles adicionales durante todo el ciclo de vida del software.
