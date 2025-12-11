@@ -16,16 +16,16 @@ Los **lenguajes de alto nivel** incorporan por diseño mecanismos que eliminan f
 - Los sistemas de tipos estáticos fuertes y las comprobaciones en tiempo de compilación (especialmente avanzadas en lenguajes modernos como Rust) detectan errores de concurrencia y de acceso a memoria antes de la ejecución.  
 - Los entornos de ejecución controlados (JVM, CLR, sandbox del navegador) añaden capas adicionales de aislamiento.
 
-### Comparativa de medidas de seguridad estructural
-**Lenguaje** | **Gestión de memoria** | **Seguridad de memoria inherente** | **Prevención de inyecciones y errores comunes** | **Concurrencia segura por diseño** | **Nivel general de protección estructural**
-***C/C++*** | Manual | Muy baja | Depende totalmente del programador | Manual y propensa a errores | ★☆☆☆☆ 
-***Java*** | GC + verificación bytecode | Muy alta | Alta (sandbox, prepared statements) | Buena | ★★★★☆
-***C#*** | GC + CLR | Muy alta | Alta | Buena | ★★★★☆
-***Python*** | GC automático | Alta | Buena (con frameworks y buenas prácticas) | Media | ★★★☆☆
-***Go*** | GC + canales | Muy alta | Alta | Excelente | ★★★★☆
-***Rust*** | Ownership/borrow checker | Máxima (garantías en compile-time) | Muy alta | Excelente | ★★★★★
-***PHP*** | GC automático | Alta | Media-alta (depende de versión y código) | Básica | ★★★☆☆
-***JavaScript*** | GC automático | Alta | Buena en entornos modernos (Node/Browser) | Excelente (async/await) | ★★★☆☆
+| Lenguaje         | Gestión de memoria           | Seguridad de memoria inherente | Prevención de errores comunes (overflow, inyecciones…) | Concurrencia segura | Protección estructural |
+|------------------|------------------------------|--------------------------------|--------------------------------------------------------|---------------------|------------------------|
+| **C / C++**      | Manual                       | Muy baja                       | Depende totalmente del programador                     | Manual y propensa   | ★☆☆☆☆                 |
+| **Java**         | GC + verificación bytecode   | Muy alta                       | Alta (sandbox, prepared statements)                    | Buena               | ★★★★☆                 |
+| **C#**           | GC + CLR                     | Muy alta                       | Alta                                                   | Buena               | ★★★★☆                 |
+| **Python**       | GC automático                | Alta                           | Buena con frameworks y buenas prácticas                | Media (GIL)         | ★★★☆☆                 |
+| **Go**           | GC + canales                 | Muy alta                       | Alta                                                   | Excelente           | ★★★★☆                 |
+| **Rust**         | Ownership / borrow checker   | **Máxima** (garantías en tiempo de compilación) | Muy alta                                     | Excelente           | ★★★★★                 |
+| **PHP 8.x**      | GC automático                | Alta                           | Media-alta (según versión y código)                   | Básica              | ★★★☆☆                 |
+| **JavaScript**   | GC automático                | Alta                           | Buena en entornos modernos                             | Excelente (async)   | ★★★☆☆                 |
 
 ### Conclusión final
 En conclusión, aunque ningún lenguaje garantiza por sí solo la seguridad absoluta —las buenas prácticas, revisiones de código y actualizaciones siguen siendo imprescindibles—, los lenguajes modernos ofrecen **niveles de protección estructural muy superiores** a los disponibles hace dos décadas.
