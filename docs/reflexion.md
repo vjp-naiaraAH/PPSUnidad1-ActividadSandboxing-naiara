@@ -16,6 +16,8 @@ Los **lenguajes de alto nivel** incorporan por diseño mecanismos que eliminan f
 - Los sistemas de tipos estáticos fuertes y las comprobaciones en tiempo de compilación (especialmente avanzadas en lenguajes modernos como Rust) detectan errores de concurrencia y de acceso a memoria antes de la ejecución.  
 - Los entornos de ejecución controlados (JVM, CLR, sandbox del navegador) añaden capas adicionales de aislamiento.
 
+### Comparativa de medidas de seguridad estructural
+
 | **Lenguaje**         | **Gestión de memoria**           | **Seguridad de memoria inherente** | **Prevención de errores comunes (overflow, inyecciones…)** | **Concurrencia segura** | **Protección estructural** |
 |------------------|------------------------------|--------------------------------|--------------------------------------------------------|---------------------|------------------------|
 | ***C / C++***      | Manual                       | Muy baja                       | Depende totalmente del programador                     | Manual y propensa   | ★☆☆☆☆                 |
