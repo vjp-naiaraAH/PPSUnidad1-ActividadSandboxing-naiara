@@ -3,7 +3,7 @@
 > **“El lenguaje de programación que elijas influirá tanto en la seguridad de tu software como la cerradura que pones en tu puerta.”**  
 > — Bruce Schneier (experto en criptografía y ciberseguridad)
 
-+++
+---
 
 La cita de Bruce Schneier que abre tanto la teoria de esta unidad como ahora esta reflexión resume perfectamente lo que he aprendido: **el lenguaje de programación que elegimos es la primera y más importante medida de seguridad que aplicamos a nuestro software**.
 
@@ -27,7 +27,7 @@ Los **lenguajes de alto nivel** incorporan por diseño mecanismos que eliminan f
 | ***PHP 8.x***      | GC automático                | Alta                           | Media-alta (según versión y código)                   | Básica              | ★★★☆☆                 |
 | ***JavaScript***   | GC automático                | Alta                           | Buena en entornos modernos                             | Excelente (async)   | ★★★☆☆                 |
 
-+++
+---
 
 ### Conclusión final
 En conclusión, aunque ningún lenguaje garantiza por sí solo la seguridad absoluta —las buenas prácticas, revisiones de código y actualizaciones siguen siendo imprescindibles, los lenguajes modernos ofrecen **niveles de protección estructural muy superiores** a los disponibles hace dos décadas.
