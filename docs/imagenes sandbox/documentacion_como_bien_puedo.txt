@@ -1,0 +1,40 @@
+img1.png -> poner al dia la máquina con sudo apt update
+img2.png -> Creación del repositorio, yo ya lo tenía creado, por eso el error que aparece debajo del nombre. Pero para crearlo lo que hay que hacer es Flecha 1: Darle al símbolo + del menú superior de GitHub
+Flecha 2: le ponemos el nombre que nos pide la tarea "PPSUnidad1-ActividadSandboking-TuNombre" en mi caso sería PPSUnidad1-ActividadSandboking-naiara
+Flecha 3: añado un archivo readme
+Flecha 4: Clic encima de crear repositorio (botón verde al final de la página)
+img3.png -> repositorio ya creado
+img4.png -> Clonación del repositorio
+Flecha 1: Clic encima del botón <> Code
+Flecha 2: se abrirá un menú hacia aba jo con diferentes opciones, https, ssh que es la que elegimos y GitHub CLI.
+Flecha 3 -> hacemos clic sobre el símbolo de copiar
+img5.png -> En un terminal de la máquina (en mi caso usaré Kali Linux) me dirigiré al directorio Desktop porque es donde tengo guardadas todas las tareas y me parece mucho más cómodo y visual para trabajar. A continuación pondré el comando git clone https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara para copiar el repositorio en el Escritorio
+img6.png -> me muevo al repositorio que acabo de crear con el comando cd nombre del repositorio 
+cd PPSUnidad1-ActividadSandboxing-naiara/ Y dentro ejecuto un ls para ver si se ha clonado bien el repositorio y está el README.md
+img7.png -> Ejecuto en el terminal de Kali sudo apt install firejail para instalar dicha firejail por si acaso no está instalado en Kali.
+img8.png -> Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la actividad "Actividad-Elementos-Programa-Python" y busco donde está comprimida la carpeta del programa, clic sobre el link
+img9.png -> Se abrirá la siguiente página Aplicación lavadero.py (https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad1-PruebaAplicaciones/Actividad-ElementosProgramaPython/src.zip).
+Hago clic sobre flecha 1 y se descargará el programa en el apartado de Flecha 2 Descargas. Hago clic sobre la carpeta al aldo del archivo src.zip.
+img10.png -> Se abrirá la carpeta descargas, y hago clic derecho sobre el paquete comprimido que contiene el programa lavadero.py (1), se abrirá un menú en el cual elegiré la opción copiar
+img11.png -> Lo siguiente será ir hasta el repositorio de la actividad que está en ~/Desktop/PPSUnidad1-ActividadSandboxing-naiara, ahí haremos clic derecho, pegamos el archivo comprimido y pulsamos botón derecho y descomprimo. 
+img12.png -> Para mayor comodidad a la hora de realizar los commits en GitHub lo que he hecho ha sido abrir el repositorio en visual studio code. Para ello he seguido los siguientes pasos 
+1. File -> Open Folder -> 3. Desktop -> 4. PPSUnuidad1-ActividadSandboxing-naiara
+img13.png -> Y aquí se puede ver el repositorio abierto ya con el programa
+img14.png -> Ahora es la hora de hacer un commit para que se guarden los cambios que hemos realizado (añadir el programa lavadero al repositorio). Para ello seguí los siguientes pasos:
+Flecha 1: clic cobre el símbolo git en el menú de la izquierda de visual.
+Flecha 2: clic sobre el símbolo + para añadir todo.
+Flecha 3: pongo un mensaje para poner un titulo al commit
+Flecha:  Clic sobre el botón Commit para subirlo  
+img15.png -> ahora si entramos a GitHub y recargamos el repositorio de la actividad estará el repositorio con el programa lavadero.
+img16.png -> Una cosa interesante de saber para poder continuar ocn la tarea es saber si en la máquina Kali está instalado Python, ya que el programa lavadero está escrito en ese lenguaje.
+Para conocer este dato lo que he hecho ha sido ejecutar en una terminal de Kali el comando Python --versión, el resultado de dicho comando ha sido Python  3.13.7 lo que quiere decir que está instalado en esa versión. Podemos continuar con el ejercicio.
+img17.png -> Ejecuto en la terminal sudo apt install firejail firetools puesto que es necesario ambos paquetes
+img18.png -> Ahora sí ejecuto el programa dentro del Sandbox (entorno seguro) usando el comando firejail --private=. python3 main_app.py
+El resultado completo del firejail es el siguiente
+**CORREO FIREJAIL**
+img19.png ->
+img20.png ->
+img21.png ->
+img22.png ->
+img23.png ->
+img24.png ->
