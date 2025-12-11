@@ -33,6 +33,3 @@ img18.png -> Ahora sí ejecuto el programa dentro del Sandbox (entorno seguro) u
 El resultado completo del firejail es el siguiente
 **CORREO FIREJAIL**
 img19.png -> Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox completamente aislado del resto del sistema. Esto confirma que la aplicación queda protegida aunque sea maliciosa o tenga vulnerabilidades. La opción --debug muestra en pantalla todo lo que Firejail está haciendo.
-img22.png ->
-img23.png ->
-img24.png ->
