@@ -1,6 +1,39 @@
 # Sandbox
 Un ***sandbox*** es un **entorno controlado**, aislado y seguro que se utiliza para ejecutar programas, procesar archivos o probar código sin que estos tengan la capacidad de afectar al sistema operativo principal ni a otros recursos críticos. La idea es crear un “espacio cerrado”, como una caja de arena donde los niños juegan sin peligro, pero aplicado a la informática.
 
+## Índice
+- [Sandbox](#sandbox)
+  - [Índice](#índice)
+    - [¿Para qué sirve?](#para-qué-sirve)
+    - [¿Cómo funciona?](#cómo-funciona)
+    - [Ejemplos de Sandbox](#ejemplos-de-sandbox)
+  - [Prueba de aplicación en un entorno controlado (Sandboxing)](#prueba-de-aplicación-en-un-entorno-controlado-sandboxing)
+    - [Desarrollo de la actividad](#desarrollo-de-la-actividad)
+  - [](#)
+    - [Creación del repositorio en GitHub](#creación-del-repositorio-en-github)
+  - [](#-1)
+  - [](#-2)
+    - [Clonación del repositorio](#clonación-del-repositorio)
+  - [](#-3)
+  - [](#-4)
+  - [](#-5)
+    - [Agregado del programa al repositorio](#agregado-del-programa-al-repositorio)
+  - [](#-6)
+  - [](#-7)
+  - [](#-8)
+  - [](#-9)
+  - [](#-10)
+  - [](#-11)
+  - [](#-12)
+  - [](#-13)
+  - [](#-14)
+    - [Instalación de Firejail y Firetools](#instalación-de-firejail-y-firetools)
+  - [](#-15)
+  - [](#-16)
+    - [Ejecución del Sandbox](#ejecución-del-sandbox)
+  - [](#-17)
+  - [Conclusiones y reflexión](#conclusiones-y-reflexión)
+
 ### ¿Para qué sirve?
 + Probar programas o código sin riesgo de daña el sistema
 + Analizar archivos sospechosos (como por ejemplo malware) sin infectar el equipo.
