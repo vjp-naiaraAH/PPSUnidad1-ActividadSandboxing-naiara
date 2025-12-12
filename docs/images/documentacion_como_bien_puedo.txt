@@ -1,6 +1,3 @@
-img15.png -> ahora si entramos a GitHub y recargamos el repositorio de la actividad estará el repositorio con el programa lavadero.
-img16.png -> Una cosa interesante de saber para poder continuar ocn la tarea es saber si en la máquina Kali está instalado Python, ya que el programa lavadero está escrito en ese lenguaje.
-Para conocer este dato lo que he hecho ha sido ejecutar en una terminal de Kali el comando Python --versión, el resultado de dicho comando ha sido Python  3.13.7 lo que quiere decir que está instalado en esa versión. Podemos continuar con el ejercicio.
 img17.png -> Ejecuto en la terminal sudo apt install firejail firetools puesto que es necesario ambos paquetes
 img18.png -> Ahora sí ejecuto el programa dentro del Sandbox (entorno seguro) usando el comando firejail --private=. python3 main_app.py  Que sería el sandbox más básico de firejail
 El resultado completo del firejail es el siguiente
