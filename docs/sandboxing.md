@@ -47,11 +47,15 @@ En esta imágen se puede observar como el repositorio ya está creado y tiene ú
 El proximo paso es clonar el repositorio que acabamos de crear, para ello tan solo hay que seguir los siguientes pasos:
 1. Clic encima del botón `<> Code`
 1. Se abrirá un menú hacia abajo con diferentes opciones, https, ssh (que es la que elegimos) y GitHub CLI
-1. CLic sobre el símbolo de *copiar*
+1. Clic sobre el símbolo de *copiar*
 
 ![Copiar el link](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img4.png)
 
-En un terminal de la máquina (en mi caso Kali Linux) me dirigiré al directorio Desktop con `cd Desktop` porque es donde tengo guardadas todas las tareas y me parece mucho más cómodo y visual para trabajar. A continuación pondré el comando `git clone https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara` para copiar el repositorio en el Escritorio de la máquina virtual.
+En un terminal de la máquina virtual (en mi caso la vm Kali) me dirigiré al directorio Desktop con `cd Desktop` porque es donde tengo guardadas todas las tareas y me parece mucho más cómodo y visual para trabajar. A continuación pondré el comando 
+~~~
+git clone https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara 
+~~~
+para copiar el repositorio en el Escritorio de la máquina virtual.
 
 ![Clonación del repositorio en el Escritorio](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img5.png)
 
