@@ -154,7 +154,7 @@ firejail --private=. python3 main_app.py
 ~~~
 Que sería el sandbox más básico de firejail
 El resultado completo del firejail es el siguiente
-~~~~
+~~~
 Reading profile /etc/firejail/default.profile
 Reading profile /etc/firejail/disable-common.inc
 Reading profile /etc/firejail/disable-programs.inc
