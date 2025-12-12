@@ -1,9 +1,3 @@
-img13.png -> Y aquí se puede ver el repositorio abierto ya con el programa
-img14.png -> Ahora es la hora de hacer un commit para que se guarden los cambios que hemos realizado (añadir el programa lavadero al repositorio). Para ello seguí los siguientes pasos:
-Flecha 1: clic cobre el símbolo git en el menú de la izquierda de visual.
-Flecha 2: clic sobre el símbolo + para añadir todo.
-Flecha 3: pongo un mensaje para poner un titulo al commit
-Flecha:  Clic sobre el botón Commit para subirlo  
 img15.png -> ahora si entramos a GitHub y recargamos el repositorio de la actividad estará el repositorio con el programa lavadero.
 img16.png -> Una cosa interesante de saber para poder continuar ocn la tarea es saber si en la máquina Kali está instalado Python, ya que el programa lavadero está escrito en ese lenguaje.
 Para conocer este dato lo que he hecho ha sido ejecutar en una terminal de Kali el comando Python --versión, el resultado de dicho comando ha sido Python  3.13.7 lo que quiere decir que está instalado en esa versión. Podemos continuar con el ejercicio.
