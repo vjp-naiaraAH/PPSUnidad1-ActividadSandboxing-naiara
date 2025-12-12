@@ -279,7 +279,7 @@ Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox c
 
 ---
 
-### Conclusiones y reflexión
+## Conclusiones y reflexión 
 Gracias al uso de Firejail con la opción `--private`, la aplicación Python se ejecutó en un entorno completamente aislado:
 - No tiene acceso al sistema de archivos real del host (solo ve una copia privada del directorio actual).
 - No puede acceder a la red (por defecto está bloqueada en la mayoría de distribuciones modernas).
