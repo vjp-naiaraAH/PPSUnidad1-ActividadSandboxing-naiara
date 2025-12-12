@@ -19,7 +19,7 @@ Además, utiliza un **sistema de archivos temporal** donde todo lo que el progra
 
 ---
 
-## Prueba de aplicación en un entono controlado (Sandboxing)
+## Prueba de aplicación en un entorno controlado (Sandboxing)
 En esta actividad voy a documentar como he podido realizar la prueba de la aplicación lavadero en un entorno controlado. 
 Los objetivos de la actividad han sido:
 - Conocer como se puede ejecutar programas, malware, etc en entornos controlados y aislados para su análisis
@@ -28,16 +28,17 @@ Los objetivos de la actividad han sido:
 ---
 
 ### Desarrollo de la actividad
-Lo primero es puntualizar que esta actividad la he relizado en la máquina Kali Linux de la asignatura, la cual tiene instalados ya Visual Studio code y tiene creadas PKI para poder conectarme a GitHub.
+Lo primero es puntualizar que esta actividad la he realizado en la máquina Kali Linux de la asignatura, la cual tiene instalados ya Visual Studio code y tiene creadas PKI para poder conectarme a GitHub.
 Una vez aclarado esto lo primero que hago siempre antes de comenzar a realizar cualquier actividad es ejecutar en la terminal el comando `sudo apt update` para actualizar la lista de paquetes disponibles de los repositorios por si acaso hay nuevas versiones de programas. 
 
 ![apt udpate](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img1.png)
 ---
 
+### Creación del repositorio en GitHub
 A continuación voy a ir a mi cuenta de GitHub y voy a crear un repositorio tal y como indica el profesor, ya que habrá que entregar el mismo como muestra de realización de la actividad. 
 para crearlo lo que hay que hacer es 
 1. Dar al símbolo + del menú superior de GitHub
-1. Poner el nombre que nos pide la tarea "PPSUnidad1-ActividadSandboking-TuNombre" en mi caso sería PPSUnidad1-ActividadSandboking-naiara
+1. Poner el nombre que nos pide la tarea "PPSUnidad1-ActividadSandboking-TuNombre" en mi caso sería PPSUnidad1-ActividadSandboxing-naiara
 1. Añado un archivo readme
 1. Clic encima de crear repositorio (botón verde al final de la página) 
 
@@ -49,6 +50,7 @@ En esta imágen se puede observar como el repositorio ya está creado y tiene ú
 ![Repositorio ya creado](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img3.png)
 ---
 
+### Clonación del repositorio
 El proximo paso es clonar el repositorio que acabamos de crear, para ello tan solo hay que seguir los siguientes pasos:
 1. Clic encima del botón `<> Code`
 1. Se abrirá un menú hacia abajo con diferentes opciones, https, ssh (que es la que elegimos) y GitHub CLI
@@ -73,16 +75,9 @@ cd /PPSUnidad1-ActividadSandboxing-naiara
 Y dentro ejecuto un ls para ver si se ha clonado bien el repositorio y está el README.md
 
 ![cd y ls](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img6.png)
-
-Ejecuto en el terminal de Kali 
-~~~
-sudo apt install firejail
-~~~ 
-para instalar el software firejail por si acaso no está instalado en Kali aún.
-
-![instalar firejail](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img7.png)
 ---
 
+### Agregado del programa al repositorio
 Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la actividad "Actividad-Elementos-Programa-Python" y busco donde está comprimida la carpeta del programa, clic sobre el programa [lavadero.py](https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad1-PruebaAplicaciones/Actividad-ElementosProgramaPython/src.zip)
 
 ![lavadero](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img8.png)
@@ -90,7 +85,7 @@ Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la ac
 
 A continuación para descargar el comprimido del programa, hay que seguir los siguientes pasos:
 1. Clic encima de View rar
-2. Comenzará una descarga, clic encima del símbolo de decarga
+2. Comenzará una descarga, clic encima del símbolo de descarga
 3. En el archivo comprimido que se nos ha descargado hacer clic en la carpeta que sale a la derecha del mismo. 
 
 ![lavadero](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img9.png)
@@ -137,11 +132,22 @@ Para conocer este dato lo que he hecho ha sido ejecutar en una terminal de Kali 
 ![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img16.png)
 ---
 
+### Instalación de Firejail y Firetools
+Ejecuto en el terminal de Kali 
+~~~
+sudo apt install firejail
+~~~ 
+para instalar el software firejail por si acaso no está instalado en Kali aún.
+
+![instalar firejail](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img7.png)
+---
+
 Ejecuto en la terminal sudo apt install firejail firetools puesto que es necesario ambos paquetes para poder usar correctamente el *Sandbox*.
 
 ![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img17.png)
 ---
 
+### Ejecución del Sandbox
 Ahora sí ejecuto el programa dentro del Sandbox (entorno seguro) usando el comando 
 ~~~
 firejail --private=. python3 main_app.py
@@ -270,3 +276,16 @@ Parent is shutting down, bye...
 Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox completamente aislado del resto del sistema. Esto confirma que la aplicación queda protegida aunque sea maliciosa o tenga vulnerabilidades. La opción `--debug` muestra en pantalla todo lo que Firejail está haciendo.
 
 ![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img19.png)
+
+---
+
+### Conclusiones y reflexión
+Gracias al uso de Firejail con la opción `--private`, la aplicación Python se ejecutó en un entorno completamente aislado:
+- No tiene acceso al sistema de archivos real del host (solo ve una copia privada del directorio actual).
+- No puede acceder a la red (por defecto está bloqueada en la mayoría de distribuciones modernas).
+- No puede ver ni interactuar con otros procesos del sistema.
+- Cualquier cambio o archivo creado desaparece al cerrar el sandbox.
+
+Esto demuestra que, incluso si el script `lavadero.py` hubiera sido malicioso (por ejemplo, intentara borrar archivos del home, conectarse a un C2, crear procesos persistentes, etc.), no habría podido afectar al sistema real de Kali Linux.
+
+Firejail es una herramienta extremadamente ligera y eficaz para sandboxing rápido de aplicaciones en Linux, ideal tanto para análisis de malware como para ejecutar software de procedencia desconocida con seguridad.
