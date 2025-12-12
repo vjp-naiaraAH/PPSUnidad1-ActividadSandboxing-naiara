@@ -1,46 +1,13 @@
 # Sandbox
 Un ***sandbox*** es un **entorno controlado**, aislado y seguro que se utiliza para ejecutar programas, procesar archivos o probar código sin que estos tengan la capacidad de afectar al sistema operativo principal ni a otros recursos críticos. La idea es crear un “espacio cerrado”, como una caja de arena donde los niños juegan sin peligro, pero aplicado a la informática.
 
-## Índice
-- [Sandbox](#sandbox)
-  - [Índice](#índice)
-    - [¿Para qué sirve?](#para-qué-sirve)
-    - [¿Cómo funciona?](#cómo-funciona)
-    - [Ejemplos de Sandbox](#ejemplos-de-sandbox)
-  - [Prueba de aplicación en un entorno controlado (Sandboxing)](#prueba-de-aplicación-en-un-entorno-controlado-sandboxing)
-    - [Desarrollo de la actividad](#desarrollo-de-la-actividad)
-  - [](#)
-    - [Creación del repositorio en GitHub](#creación-del-repositorio-en-github)
-  - [](#-1)
-  - [](#-2)
-    - [Clonación del repositorio](#clonación-del-repositorio)
-  - [](#-3)
-  - [](#-4)
-  - [](#-5)
-    - [Agregado del programa al repositorio](#agregado-del-programa-al-repositorio)
-  - [](#-6)
-  - [](#-7)
-  - [](#-8)
-  - [](#-9)
-  - [](#-10)
-  - [](#-11)
-  - [](#-12)
-  - [](#-13)
-  - [](#-14)
-    - [Instalación de Firejail y Firetools](#instalación-de-firejail-y-firetools)
-  - [](#-15)
-  - [](#-16)
-    - [Ejecución del Sandbox](#ejecución-del-sandbox)
-  - [](#-17)
-  - [Conclusiones y reflexión](#conclusiones-y-reflexión)
-
-### ¿Para qué sirve?
+### ¿Para que sirve?
 + Probar programas o código sin riesgo de daña el sistema
 + Analizar archivos sospechosos (como por ejemplo malware) sin infectar el equipo.
 + Ejecutar aplicaciones con permisos muy limitados
 + Simular entornos para desarrollo o experimentación
 
-### ¿Cómo funciona?
+### ¿Como funciona?
 Un **sandbox** funciona creando un entorno aislado donde un programa puede ejecutarse sin afectar al sistema real. Para lograrlo, limita los permisos del software: controla qué archivos puede tocar, qué procesos puede ver, cuánta memoria puede usar o si puede acceder a internet. Cada acción que intenta realizar pasa por un **filtro de seguridad**, y el sandbox decide si permitirla o bloquearla.
 
 Además, utiliza un **sistema de archivos temporal** donde todo lo que el programa hace queda encerrado. De este modo, aunque intente modificar el sistema o comportarse de forma peligrosa, los cambios quedan atrapados en ese espacio aislado y se eliminan al cerrar el sandbox. Esto permite *probar código, analizar archivos* o *ejecutar software desconocido* sin riesgos.
@@ -52,7 +19,7 @@ Además, utiliza un **sistema de archivos temporal** donde todo lo que el progra
 
 ---
 
-## Prueba de aplicación en un entorno controlado (Sandboxing)
+## Prueba de aplicacion en un entorno controlado (Sandboxing)
 En esta actividad voy a documentar como he podido realizar la prueba de la aplicación lavadero en un entorno controlado. 
 Los objetivos de la actividad han sido:
 - Conocer como se puede ejecutar programas, malware, etc en entornos controlados y aislados para su análisis
@@ -67,7 +34,7 @@ Una vez aclarado esto lo primero que hago siempre antes de comenzar a realizar c
 ![apt udpate](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img1.png)
 ---
 
-### Creación del repositorio en GitHub
+### Creacion del repositorio en GitHub
 A continuación voy a ir a mi cuenta de GitHub y voy a crear un repositorio tal y como indica el profesor, ya que habrá que entregar el mismo como muestra de realización de la actividad. 
 para crearlo lo que hay que hacer es 
 1. Dar al símbolo + del menú superior de GitHub
@@ -83,7 +50,7 @@ En esta imágen se puede observar como el repositorio ya está creado y tiene ú
 ![Repositorio ya creado](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img3.png)
 ---
 
-### Clonación del repositorio
+### Clonacion del repositorio
 El proximo paso es clonar el repositorio que acabamos de crear, para ello tan solo hay que seguir los siguientes pasos:
 1. Clic encima del botón `<> Code`
 1. Se abrirá un menú hacia abajo con diferentes opciones, https, ssh (que es la que elegimos) y GitHub CLI
@@ -165,7 +132,7 @@ Para conocer este dato lo que he hecho ha sido ejecutar en una terminal de Kali 
 ![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img16.png)
 ---
 
-### Instalación de Firejail y Firetools
+### Instalacion de Firejail y Firetools
 Ejecuto en el terminal de Kali 
 ~~~
 sudo apt install firejail
@@ -180,7 +147,7 @@ Ejecuto en la terminal sudo apt install firejail firetools puesto que es necesar
 ![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img17.png)
 ---
 
-### Ejecución del Sandbox
+### Ejecucion del Sandbox
 Ahora sí ejecuto el programa dentro del Sandbox (entorno seguro) usando el comando 
 ~~~
 firejail --private=. python3 main_app.py
@@ -312,13 +279,14 @@ Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox c
 
 ---
 
-## Conclusiones y reflexión 
+## Conclusiones y reflexion
 Gracias al uso de Firejail con la opción `--private`, la aplicación Python se ejecutó en un entorno completamente aislado:
-- No tiene acceso al sistema de archivos real del host (solo ve una copia privada del directorio actual).
-- No puede acceder a la red (por defecto está bloqueada en la mayoría de distribuciones modernas).
-- No puede ver ni interactuar con otros procesos del sistema.
-- Cualquier cambio o archivo creado desaparece al cerrar el sandbox.
 
-Esto demuestra que, incluso si el script `lavadero.py` hubiera sido malicioso (por ejemplo, intentara borrar archivos del home, conectarse a un C2, crear procesos persistentes, etc.), no habría podido afectar al sistema real de Kali Linux.
+- No tiene acceso al sistema de archivos real del host
+- No puede acceder a la red
+- No puede ver ni interactuar con otros procesos
+- Cualquier cambio realizado desaparece al cerrar el sandbox
+
+Esto demuestra que incluso si el script hubiera sido malicioso, no podría haber afectado al sistema real de Kali Linux.
 
 Firejail es una herramienta extremadamente ligera y eficaz para sandboxing rápido de aplicaciones en Linux, ideal tanto para análisis de malware como para ejecutar software de procedencia desconocida con seguridad.
