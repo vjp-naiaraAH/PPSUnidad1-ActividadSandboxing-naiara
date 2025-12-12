@@ -1,10 +1,3 @@
-img8.png -> Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la actividad "Actividad-Elementos-Programa-Python" y busco donde está comprimida la carpeta del programa, clic sobre el link
-img9.png -> Se abrirá la siguiente página Aplicación lavadero.py (https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad1-PruebaAplicaciones/Actividad-ElementosProgramaPython/src.zip).
-Hago clic sobre flecha 1 y se descargará el programa en el apartado de Flecha 2 Descargas. Hago clic sobre la carpeta al aldo del archivo src.zip.
-img10.png -> Se abrirá la carpeta descargas, y hago clic derecho sobre el paquete comprimido que contiene el programa lavadero.py (1), se abrirá un menú en el cual elegiré la opción copiar
-img11.png -> Lo siguiente será ir hasta el repositorio de la actividad que está en ~/Desktop/PPSUnidad1-ActividadSandboxing-naiara, ahí haremos clic derecho, pegamos el archivo comprimido y pulsamos botón derecho y descomprimo. 
-img12.png -> Para mayor comodidad a la hora de realizar los commits en GitHub lo que he hecho ha sido abrir el repositorio en visual studio code. Para ello he seguido los siguientes pasos 
-1. File -> Open Folder -> 3. Desktop -> 4. PPSUnuidad1-ActividadSandboxing-naiara
 img13.png -> Y aquí se puede ver el repositorio abierto ya con el programa
 img14.png -> Ahora es la hora de hacer un commit para que se guarden los cambios que hemos realizado (añadir el programa lavadero al repositorio). Para ello seguí los siguientes pasos:
 Flecha 1: clic cobre el símbolo git en el menú de la izquierda de visual.
