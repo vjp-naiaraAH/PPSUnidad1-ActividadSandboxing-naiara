@@ -25,6 +25,8 @@ Los objetivos de la actividad han sido:
 - Conocer como se puede ejecutar programas, malware, etc en entornos controlados y aislados para su análisis
 - Ser capaz de hacer Sandboxing de un programa
 
+---
+
 ### Desarrollo de la actividad
 Lo primero es puntualizar que esta actividad la he relizado en la máquina Kali Linux de la asignatura, la cual tiene instalados ya Visual Studio code y tiene creadas PKI para poder conectarme a GitHub.
 Una vez aclarado esto lo primero que hago siempre antes de comenzar a realizar cualquier actividad es ejecutar en la terminal el comando `sudo apt update` para actualizar la lista de paquetes disponibles de los repositorios por si acaso hay nuevas versiones de programas. 
@@ -66,3 +68,17 @@ cd /PPSUnidad1-ActividadSandboxing-naiara
 Y dentro ejecuto un ls para ver si se ha clonado bien el repositorio y está el README.md
 
 ![cd y ls](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img6.png)
+
+Ejecuto en el terminal de Kali 
+~~~
+sudo apt install firejail
+~~~ 
+para instalar el software firejail por si acaso no está instalado en Kali aún.
+
+![instalar firejail](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img7.png)
+
+
+# COSAS POR HACER
+Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la actividad "Actividad-Elementos-Programa-Python" y busco donde está comprimida la carpeta del programa, clic sobre el programa [lavadero.py](https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad1-PruebaAplicaciones/Actividad-ElementosProgramaPython/src.zip)
+
+![lavadero](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img8.png)

@@ -1,4 +1,3 @@
-img7.png -> Ejecuto en el terminal de Kali sudo apt install firejail para instalar dicha firejail por si acaso no está instalado en Kali.
 img8.png -> Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la actividad "Actividad-Elementos-Programa-Python" y busco donde está comprimida la carpeta del programa, clic sobre el link
 img9.png -> Se abrirá la siguiente página Aplicación lavadero.py (https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad1-PruebaAplicaciones/Actividad-ElementosProgramaPython/src.zip).
 Hago clic sobre flecha 1 y se descargará el programa en el apartado de Flecha 2 Descargas. Hago clic sobre la carpeta al aldo del archivo src.zip.
