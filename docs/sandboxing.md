@@ -101,16 +101,18 @@ Y ahora para mayor comodidad a la hora de subirlo a GitHub lo que hago es abrir 
 
 ![copia-pega](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img12.png)
 
+---
+
  En esta captura se puede observar el repositorio abierto ya con el programa en su interior y descomprimido.
 
 ![copia-pega](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img13.png)
-
+---
 Llegó la hora de hacer un commit para que se guarden los cambios que hemos realizado (añadir el programa lavadero al repositorio). Para ello seguí los siguientes pasos:
-Flecha 1: clic cobre el símbolo git en el menú de la izquierda de visual.
-Flecha 2: clic sobre el símbolo + para añadir todo.
-Flecha 3: pongo un mensaje para poner un titulo al commit
-Flecha:  Clic sobre el botón Commit para subirlo  
+1. clic cobre el símbolo git en el menú de la izquierda de visual.
+1. clic sobre el símbolo + para añadir todo.
+1. pongo un mensaje para poner un titulo al commit
+1.  Clic sobre el botón Commit para subirlo  
 
 ![copia-pega](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img14.png)
-
+---
 Accedo a la 
