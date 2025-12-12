@@ -28,6 +28,7 @@ Los objetivos de la actividad han sido:
 ### Desarrollo de la actividad
 Lo primero es puntualizar que esta actividad la he relizado en la máquina Kali Linux de la asignatura, la cual tiene instalados ya Visual Studio code y tiene creadas PKI para poder conectarme a GitHub.
 Una vez aclarado esto lo primero que hago siempre antes de comenzar a realizar cualquier actividad es ejecutar en la terminal el comando `sudo apt update` para actualizar la lista de paquetes disponibles de los repositorios por si acaso hay nuevas versiones de programas. 
+
 ![apt udpate](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img1.png)
 
 A continuación voy a ir a mi cuenta de GitHub y voy a crear un repositorio tal y como indica el profesor, ya que habrá que entregar el mismo como muestra de realización de la actividad. 
@@ -38,3 +39,26 @@ para crearlo lo que hay que hacer es
 1. Clic encima de crear repositorio (botón verde al final de la página) 
 
 ![Pasos para crear un repositorio](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img2.png)
+
+En esta imágen se puede observar como el repositorio ya está creado y tiene únicamente en su interior el archivo README.md
+
+![Repositorio ya creado](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img3.png)
+
+El proximo paso es clonar el repositorio que acabamos de crear, para ello tan solo hay que seguir los siguientes pasos:
+1. Clic encima del botón `<> Code`
+1. Se abrirá un menú hacia abajo con diferentes opciones, https, ssh (que es la que elegimos) y GitHub CLI
+1. CLic sobre el símbolo de *copiar*
+
+![Copiar el link](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img4.png)
+
+En un terminal de la máquina (en mi caso Kali Linux) me dirigiré al directorio Desktop con `cd Desktop` porque es donde tengo guardadas todas las tareas y me parece mucho más cómodo y visual para trabajar. A continuación pondré el comando `git clone https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara` para copiar el repositorio en el Escritorio de la máquina virtual.
+
+![Clonación del repositorio en el Escritorio](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img5.png)
+
+Me muevo al repositorio que acabo de crear con el comando cd nombre del repositorio que en mi caso sería 
+~~~
+cd /PPSUnidad1-ActividadSandboxing-naiara
+~~~
+Y dentro ejecuto un ls para ver si se ha clonado bien el repositorio y está el README.md
+
+![cd y ls](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img6.png)

@@ -1,16 +1,3 @@
-img1.png -> poner al dia la máquina con sudo apt update
-img2.png -> Creación del repositorio, yo ya lo tenía creado, por eso el error que aparece debajo del nombre. Pero para crearlo lo que hay que hacer es Flecha 1: Darle al símbolo + del menú superior de GitHub
-Flecha 2: le ponemos el nombre que nos pide la tarea "PPSUnidad1-ActividadSandboking-TuNombre" en mi caso sería PPSUnidad1-ActividadSandboking-naiara
-Flecha 3: añado un archivo readme
-Flecha 4: Clic encima de crear repositorio (botón verde al final de la página)
-img3.png -> repositorio ya creado
-img4.png -> Clonación del repositorio
-Flecha 1: Clic encima del botón <> Code
-Flecha 2: se abrirá un menú hacia aba jo con diferentes opciones, https, ssh que es la que elegimos y GitHub CLI.
-Flecha 3 -> hacemos clic sobre el símbolo de copiar
-img5.png -> En un terminal de la máquina (en mi caso usaré Kali Linux) me dirigiré al directorio Desktop porque es donde tengo guardadas todas las tareas y me parece mucho más cómodo y visual para trabajar. A continuación pondré el comando git clone https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara para copiar el repositorio en el Escritorio
-img6.png -> me muevo al repositorio que acabo de crear con el comando cd nombre del repositorio 
-cd PPSUnidad1-ActividadSandboxing-naiara/ Y dentro ejecuto un ls para ver si se ha clonado bien el repositorio y está el README.md
 img7.png -> Ejecuto en el terminal de Kali sudo apt install firejail para instalar dicha firejail por si acaso no está instalado en Kali.
 img8.png -> Como voy a usar el programa de lavadero.py lo que voy ha hacer es volver a la actividad "Actividad-Elementos-Programa-Python" y busco donde está comprimida la carpeta del programa, clic sobre el link
 img9.png -> Se abrirá la siguiente página Aplicación lavadero.py (https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad1-PruebaAplicaciones/Actividad-ElementosProgramaPython/src.zip).
